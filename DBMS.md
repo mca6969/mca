@@ -1,4 +1,5 @@
 # Student-Enrollment Database.
+```
 Consider the following relations:
 Student(snum: integer, sname: string, major: string, level: string, age: integer)
 Class(name: string, meets at: string, room: string, fid: integer)
@@ -12,6 +13,7 @@ Write the following queries in SQL.
 3. Find the names of all Juniors (level=JR) who are enrolled in a class taught by I.John.
 4. For each level, print the level and the average age of students for that level.
 5. Find the names of students not enrolled in any class
+```
 
 # Insurance Database.
 Consider the insurance database given below.
