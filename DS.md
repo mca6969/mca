@@ -1,4 +1,4 @@
-#1.Operations on STACK of Integers
+# 1.Operations on STACK of Integers
 ```
 #include <stdio.h>
 #define MAX 5
