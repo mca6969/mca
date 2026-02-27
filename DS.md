@@ -71,7 +71,7 @@ int main()
             case 2: pop(); break;
             case 3: display(); break;
             case 4: peek(); break;
-            case 5: printf("Exiting program\n"); break;
+            case 5: exit(0);break;
             default: printf("Invalid choice! Try again.\n");
         }
     }
