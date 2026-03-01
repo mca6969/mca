@@ -1,5 +1,6 @@
 # Student-Enrollment Database.
-![](DBMS/Screenshot 2026-03-01 202146.png)
+![Alternative text for the image]()
+
 ### Create the above tables by properly specifying all the integrity constraints.
 ```
 CREATE TABLE Student (
@@ -73,6 +74,7 @@ WHERE s.snum NOT IN (
  SELECT e.snum FROM Enrolled e
 );
 ```
+
 
 
 
