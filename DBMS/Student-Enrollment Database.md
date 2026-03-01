@@ -31,28 +31,24 @@ CREATE TABLE Enrolled (
 ```
 ### Insert at least five tuples into each table. 
 ```
-Students
 INSERT INTO Student VALUES (1, 'Alice', 'CS', 'JR', 20);
 INSERT INTO Student VALUES (2, 'Bob', 'Math', 'SR', 21);
 INSERT INTO Student VALUES (3, 'Charlie', 'Physics', 'JR',22);
 INSERT INTO Student VALUES (4, 'Diana', 'CS', 'FR', 18);
 INSERT INTO Student VALUES (5, 'Ethan', 'Biology', 'PG', 25);
 
-Faculty
 INSERT INTO Faculty VALUES (101, 'I.John', 10);
 INSERT INTO Faculty VALUES (102, 'Dr. Johnson', 20);
 INSERT INTO Faculty VALUES (103, 'Dr. Lee', 30);
 INSERT INTO Faculty VALUES (104, 'Dr. Patel', 40);
 INSERT INTO Faculty VALUES (105, 'Dr. Brown', 50);
 
-Classes
 INSERT INTO Class VALUES ('DBMS', 'Mon 10AM', 'R101', 101);
 INSERT INTO Class VALUES ('Algorithms', 'Tue 2PM', 'R102',102);
 INSERT INTO Class VALUES ('Networks', 'Wed 11AM', 'R103', 103);
 INSERT INTO Class VALUES ('Biology', 'Thu 9AM', 'R104', 104);
 INSERT INTO Class VALUES ('Physics', 'Fri 3PM', 'R105', 105);
 
-Enrolled
 INSERT INTO Enrolled VALUES (1, 'DBMS');
 INSERT INTO Enrolled VALUES (2, 'Algorithms');
 INSERT INTO Enrolled VALUES (3, 'Physics');
@@ -77,6 +73,7 @@ WHERE s.snum NOT IN (
  SELECT e.snum FROM Enrolled e
 );
 ```
+
 
 
 
