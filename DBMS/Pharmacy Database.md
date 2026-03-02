@@ -152,6 +152,19 @@ JOIN Doctor d ON p.doctor_ssn = d.ssn
 JOIN Prescription pr ON p.ssn = pr.patient_ssn;
 ```
 ### Produce a listing Pharmacy name, Pharmaceutical company, Drug trade name,contract start date & end date, supervisor for each contract between a Pharmacy & Pharmaceutical Company.
+```
+SELECT 
+    P.name AS Pharmacy_Name,
+    C.name AS Pharmaceutical_Company,
+    D.trade_name AS Drug_Trade_Name,
+    CT.start_date,
+    CT.end_date,
+    CT.supervisor
+FROM Pharmacy P, PharmaceuticalCompany C, Drug D, Contract CT
+WHERE P.pharmacy_id = CT.pharmacy_id
+  AND C.company_id = CT.company_id
+  AND D.company_id = C.company_id;
+```
 
 ### For each doctor display the doctor’s name and the count of prescriptions given by doctor containing the drugs made by NAVYYA LABS.
 ```
@@ -171,3 +184,4 @@ FROM Patient p
 JOIN Prescription pr ON p.ssn = pr.patient_ssn
 JOIN Pharmacy ph ON pr.pharm_id = ph.pharm_id;
 ```
+
