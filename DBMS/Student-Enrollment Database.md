@@ -8,7 +8,7 @@ CREATE TABLE Student (
  snum INT PRIMARY KEY,
  sname VARCHAR(50) NOT NULL,
  major VARCHAR(30),
- level VARCHAR(10),
+ s_level VARCHAR(10),
  age INT 
 );
 CREATE TABLE Faculty (
@@ -63,7 +63,7 @@ INSERT INTO Enrolled VALUES (4, 'Networks');
 ```
 #### Find the names of all Juniors (level=JR) who are enrolled in a class taught by I.John.
 ```
-SELECT * FROM Student ,faculty WHERE level='JR' and fname='i.john';
+SELECT * FROM Student ,faculty WHERE s_level='JR' and fname='i.john';
 ```
 #### For each level, print the level and the average age of students for that level.
 ``` 
@@ -79,5 +79,6 @@ WHERE s.snum NOT IN (
  SELECT e.snum FROM Enrolled e
 );
 ```
+
 
 
