@@ -12,7 +12,6 @@
 
     <h1>India - Static Web Application</h1>
 
-    <!-- Navigation Bar -->
     <nav>
         <a href="#">Home</a>
         <a href="#">About India</a>
@@ -96,14 +95,14 @@
 ```
 ### Style.css
 ```
-/* Page styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f4f6f7;
 }
 
-/* Navigation bar */
+
 nav {
     background-color: #154360;
     padding: 12px;
@@ -122,38 +121,38 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main heading */
+
 h1 {
     text-align: center;
     color: #2c3e50;
 }
 
-/* Section headings */
 h2 {
     color: #1a5276;
 }
 
-/* Paragraph text */
+
 p {
     font-size: 14px;
     line-height: 1.6;
 }
 
-/* Highlighted text */
+
 span {
     color: #c0392b;
     font-weight: bold;
 }
 
-/* Google Map iframe */
+
 iframe {
     border: 2px solid #7b8c8d;
     margin-top: 10px;
 }
 
-/* Footer */
+
 p:last-of-type {
     text-align: center;
     margin-top: 20px;
 }
 ```
+
